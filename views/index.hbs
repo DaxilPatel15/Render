@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    {{!-- adding bootstraplinks --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Homepage</title>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+
+</head>
+{{!-- body section --}}
+ <body>
+
+{{!-- using div to store my image and my description in proper form and size to match my requirement  --}}
+<div class="jumbotron" style="background-image: url('./images/bg1.jpg'); background-size: cover; background-position: center; height: 700px; color: white; font-family: 'Courier New', Courier, monospace; ">
+    <h1 class="display-4" style="text-align: center;"><strong>Welcome to my Portfolio</strong></h1>
+    <p class="lead">Greetings and thank you for visiting my portfolio! This space is a reflection of my journey, passions, and the work I've dedicated myself to. It's a pleasure to share it with you, and I hope you find it both inspiring and informative.
+
+Within these digital pages, you'll discover a collection of my accomplishments, projects, and experiences. Each piece represents a unique aspect of my skills, creativity, and dedication to my craft. Whether you're here to explore my artwork, dive into my professional accomplishments, or learn more about my journey, I encourage you to take your time and explore the various sections.
+
+This portfolio is a testament to my commitment to continuous learning and improvement, and it's a showcase of the dedication I bring to every endeavor. Feel free to reach out if you have any questions, feedback, or if you're interested in collaborating. I'm always excited to connect with like-minded individuals who share a passion for the work I do.
+
+Thank you once again for being a part of this journey with me. I look forward to sharing my world with you, and I hope you leave with a deeper understanding of who I am and what I can bring to the table.
+
+<p>Warm regards,</p>
+
+<p>Daxil Patel</p>
+
+
+
+
+
+
+
+</p>
+{{!-- here is my github and resume link --}}
+ <p>Checkout my: <a href="https://github.com/DaxilPatel15?tab=repositories" class="btn btn-primary">GitHub</a> & <a href="./resume/RESUME.pdf" class="btn btn-primary" download>Resume</a></p>
+ 
+
+
+
+
+</div>
+
+{{!-- here it is my blog sections about the technical articles  --}}
+<div class="container mt-5" >
+    <h2>Checkout my Blogs:</h2>
+    <style>
+        .blog-card .blog-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .blog-card {
+            margin-bottom: 20px;
+        }
+
+        .blog-card h3 {
+            margin-top: 10px;
+        }
+
+        .blog-card p {
+            margin: 0;
+        }
+
+        .blog-card-body {
+            padding: 20px;
+        }
+
+        .blog-card .btn {
+            margin-top: 10px;
+        }
+    </style>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="blog-card">
+                {{!-- adding image1 for my blog section and it also has website link if you want to read more about the blog --}}
+                <img src="./images/b1.jpeg" alt="Blog Post 1" class="img-fluid blog-image" style="">
+                <div class="blog-card-body">
+                    <h3>The Exciting World of Game Development: Getting Started</h3>
+                    <p>Introduction to the game development industry.</p>
+                    <p>Different game engines like Unity, Unreal Engine, and Godot.</p>
+                    <p>Steps to start your journey in game development.</p>
+                    <p>Highlight key resources and communities for game developers.</p>
+                      {{!-- here is the link for my blog  --}}
+                    <a href="https://create.torontofilmschool.ca/video-game-design-animation-development/on-campus/?param=new&mg=Search+Engine+Marketing&msg=Bing+Ad&utm_source=bing&utm_medium=cpc&utm_campaign=vg-search-canada&utm_keyword=game%20designer&utm_content=&msclkid=cd3f1131505b14c6439074186c0d4341 " class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="blog-card">
+                {{!-- adding image2 for my blog section and it also has website link if you want to read more about the blog --}}
+                <img src="./images/b2.jpg" alt="Blog Post 2" class="img-fluid blog-image">
+                <div class="blog-card-body">
+                    <h3>Contributing to Open Source: A Beginner's Guide</h3>
+                    <p>Explain the concept of open source software.</p>
+                    <p>Benefits of contributing to open source projects.</p>
+                    <p>Step-by-step guide on how to find, choose, and contribute to open source projects.</p>
+                    <p>Tips for a successful contribution and community engagement.</p>
+                      {{!-- here is the link for my blog  --}}
+                    <a href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="blog-card">
+                {{!-- adding image3 for my blog section and it also has website link if you want to read more about the blog --}}
+                <img src="./images/b3.jpg" alt="Blog Post 3" class="img-fluid blog-image">
+                <div class="blog-card-body">
+                    <h3>A Step-by-Step Guide for Programming Beginners</h3>
+                    <p>Introduction to programming for absolute beginners.</p>
+                    <p>Overview of popular programming languages for beginners.</p>
+                    <p>Provide a simple "Hello World" example in a chosen language.</p>
+                    <p>Suggest resources and learning platforms for beginners.</p>
+                    {{!-- here is the link for my blog  --}}
+                    <a href="https://localconsumerinsider.com/Computer%20Programming%20Classes?og1=18c26560-432c-46cc-8f12-3b0fb508e892&acid=cid151499&gclid=&msclkid=c3f40432f92315b65893611bc5fe4779&avid=6138&asrc=bing" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- the below are the javascript links --}}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+{{!-- body close --}}
+</html>
+{{!-- end of file --}}

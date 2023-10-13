@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- adding links --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- adding title for this projects --}}
+    <title>Projects Section</title>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {{!-- adding css so when user`s cursor passes this projects it will give hover effect to the user --}}
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+ <body>
+    <div class="container mt-5">
+        <h2 class="text-center"><strong>PROJECTS</strong></h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    {{!-- adding image and description of project --}}
+                    <img src="./images/p1.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator</h5>
+                        <p class="card-text">This is the console-based calculator to perform simple math operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    {{!-- adding image and description of project --}}
+                    <img src="./images/p2.jpg" class "card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Rock, Paper, and Scissors</h5>
+                        <p class="card-text">This game is based on a console where the user has to input the initials of the three objects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    {{!-- adding image and description of project --}}
+                    <img src="./images/p3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Merchandise Store</h5>
+                        <p class="card-text">It's a clothing website made with all the functionality of other online clothing stores like adding items to the cart and checkout.</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    {{!-- adding JS links --}}
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{{!-- end of body  --}}
+</html>
+{{!-- end of file --}}

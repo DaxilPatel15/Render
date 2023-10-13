@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+   
+   {{!-- adding bootstraps and other links --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+</head>
+ <body>
+    {{!-- start of body tag --}}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            {{!-- contact form where user can send message for questions or collaborations --}}
+            <h2>Send Message</h2>
+            <form id="contactForm" action="process_contact_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="showAlert()">Submit</button>
+                 {{!-- submit btn when user send the the message it will store in the system and i can see user message --}}
+            </form>
+        </div>
+        <div class="col-lg-6">
+            {{!-- my contact details like phone no, email, address --}}
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Main St, City, L9M 5C2</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> daxilpatel@example.com</p>
+        </div>
+        {{!-- this for the alert message when user submit the the message this will notify the user that message was send to the developer --}}
+    </div>
+    <div id="alertMessage"></div>
+</div>
+
+{{!-- adding JS link --}}
+<script>
+    function showAlert() {
+        var alertMessage = "Your message has been sent!"; // Customize your message
+        document.getElementById("alertMessage").innerHTML = '<div class="alert alert-success">' + alertMessage + '</div>';
+    }
+</script>
+</body>
+{{!-- end of body tag --}}
+</html>
+{{!-- end of file --}}

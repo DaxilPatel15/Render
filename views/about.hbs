@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{{!-- start of html document --}}
+<html lang="en">
+<head>
+    {{!-- adding links  --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Company</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+ <body>
+{{!-- adding div for my description and image  --}}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>About Me</h2>
+            <p>
+                Hello, I'm Daxil Patel, and I'm an aspiring computer programmer with a strong enthusiasm for the world of coding and software development. While I may be new to this exciting field, my journey began with a genuine fascination for technology and a desire to learn how to bring ideas to life through code. My programming journey is just beginning, but I am committed to the process of learning and growing. I'm eager to build a solid foundation in the fundamentals of computer science. I believe in the power of continuous learning and the importance of staying up-to-date with the latest developments in the tech world. I'm open to collaborating with experienced professionals, participating in coding communities, and taking on challenges that will help me expand my skills and knowledge. My passion for programming drives me to create and solve problems in innovative ways. As I embark on this exciting path, I'm eager to connect with mentors, peers, and potential collaborators who can help me gain valuable experience and knowledge in the world of computer programming. Thank you for visiting my portfolio. If you're interested in supporting a new programmer's journey or have opportunities for collaboration, I'd love to connect and explore how I can contribute to projects and continue my learning journey.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            {{!-- adding image --}}
+            <img src="./images/a1.jpg" alt="About Us Image" class="img-fluid" style="height: 550px;">
+        </div>
+    </div>
+</div>
+{{!-- adding my education, skills and  computer languages that i know --}}
+<div class="container mt-5">
+    {{!-- adding education sections --}}
+    <h2>Education</h2>
+    <div class="accordion" id="educationAccordion">
+
+        <!-- Education Item 1 -->
+        <div class="card">
+            <div class="card-header" id="eduItem1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eduCollapse1" aria-expanded="true" aria-controls="eduCollapse1">
+                        <span>➕</span>
+                    </button>
+                </h2>
+            </div>
+            <div id="eduCollapse1" class="collapse" aria-labelledby="eduItem1" data-parent="#educationAccordion">
+            <div class="card-body">
+                    College Name: Georgian College('GC`24')<br>
+                    Graduation Year: 2024<br>
+                    Course:  Diploma in Computer Programming(CMPG)<br>
+                    Description: A highly motivated programmer.
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- adding professional skills section --}}
+    <h2 class="mt-4">Professional Skills</h2>
+    <div class="accordion" id="skillsAccordion">
+
+        <!-- Skills Item 1 -->
+        <div class="card">
+            <div class="card-header" id="skillsItem1">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#skillsCollapse1" aria-expanded="true" aria-controls="skillsCollapse1">
+                        <span>➕</span>
+                    </button>
+                </h2>
+            </div>
+            <div id="skillsCollapse1" class="collapse" aria-labelledby="skillsItem1" data-parent="#skillsAccordion">
+                <div class="card-body">
+                    Description: Proficient in Statistical Analysis, Web Development, User Interface Design, .
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more skills items as needed -->
+
+    </div>
+    {{!-- adding computer languages sections that i know --}}
+    <h2 class="mt-4">Computer Languages</h2>
+<div class="accordion" id="compLanguagesAccordion">
+
+    <!-- Computer Languages Item 1 -->
+    <div class="card">
+        <div class="card-header" id="compLangItem1">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#compLangCollapse1" aria-expanded="true" aria-controls="compLangCollapse1">
+                    <span>➕</span>
+                </button>
+            </h2>
+        </div>
+        <div id="compLangCollapse1" class="collapse" aria-labelledby="compLangItem1" data-parent="#compLanguagesAccordion">
+            <div class="card-body">
+                <p>Language:JavaScript</p>
+                <p>Proficiency: intermediate</p>
+                <p>Description: Intermediate JavaScript developer adept in web development, frameworks, and interactive solutions</p>
+            </div>
+            <div class="card-body">
+                <p>Language:C sharp(C#)</p>
+                <p>Proficiency: Advance</p>
+                <p>Description: Advance C# developer skilled in OOP, GUI, database, web, and game development</p>
+            </div>
+            <div class="card-body">
+                <p>Language:Swift(ios mobile development)</p>
+                <p>Proficiency: Newbie</p>
+                <p>Description: Swift language newbie eager to learn and collaborate in mobile app development and software projects</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+{{!-- javascript links --}}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+{{!-- body end --}}
+</html>
+{{!-- end of file --}}
